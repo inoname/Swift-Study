@@ -16,4 +16,14 @@
     3.swift中类的完整名称是 “命名空间+类名”，因此swift中不需要类前缀
 
     4.swift中用到方法时不再需要SEL，直接写字符串就可以
+
+    5.Swift中，如果希望让类动态调用协议方法，需要使用 @objc 的关键字
+        @objc protocol DictModelProtocol {
+            static func customeClassMapping() -> [String: String]?
+        }
+
+    6. === 判断两个对象是否指向相同的内存地址
+       ==  判断两个值是否相等
+
+
 */
