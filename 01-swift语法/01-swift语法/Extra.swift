@@ -17,13 +17,26 @@
 
     4.swift中用到方法时不再需要SEL，直接写字符串就可以
 
-    5.Swift中，如果希望让类动态调用协议方法，需要使用 @objc 的关键字
-        @objc protocol DictModelProtocol {
-            static func customeClassMapping() -> [String: String]?
-        }
 
-    6. === 判断两个对象是否指向相同的内存地址
+    5. === 判断两个对象是否指向相同的内存地址
        ==  判断两个值是否相等
 
+    6.Swift中，如果希望让类动态调用协议方法，需要使用 @objc 的关键字
+        @objc protocol DictModelProtocol {
+        static func customeClassMapping() -> [String: String]?
+        }
 
+    7.mutating 表示函数操作的字典是可变类型的
+    extension Dictionary {
+        mutating func merge<K, V>(dict: [K: V]) {
+            for (k, v) in dict {
+                // 字典的分类方法中，如果要使用 updateValue，需要明确的指定类型
+                self.updateValue(v as! Value, forKey: k as! Key)
+            }
+        }
+    }
+
+    8.协议的方法覆盖init函数时需要required关键字
+    //自定义对象归档实现 NSCoding 协议
+    required init(coder decoder: NSCoder) {}
 */
