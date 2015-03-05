@@ -1,12 +1,10 @@
 //
-//  Model.swift
+//  自定义对象归档
 //  01-swift语法
 //
 //  Created by kouliang on 15/3/3.
 //  Copyright (c) 2015年 kouliang. All rights reserved.
 //
-
-
 
 /**
     归档 NSCoding，实现两个方法
@@ -19,13 +17,9 @@
 */
 
 
-/**
-    如果要打印对象信息，OC 中的 description，在 swift 中需要遵守协议 DebugPrintable
-*/
-
 import UIKit
 
-class AccessToken: NSObject,NSCoding {
+class EncodeClass: NSObject,NSCoding {
    
     var access_token: String?
     var expiresDate: NSDate?
@@ -67,12 +61,12 @@ class AccessToken: NSObject,NSCoding {
 // MARK: - 快捷方法
     ///  将数据保存到沙盒
     func saveAccessToken() {
-        NSKeyedArchiver.archiveRootObject(self, toFile: AccessToken.tokenPath())
+        NSKeyedArchiver.archiveRootObject(self, toFile: EncodeClass.tokenPath())
     }
     
-    //  从沙盒读取 token 数据
-    class func loadAccessToken() -> AccessToken? {
-        return NSKeyedUnarchiver.unarchiveObjectWithFile(tokenPath()) as? AccessToken
+    //  从沙盒读取数据
+    class func loadAccessToken() -> EncodeClass? {
+        return NSKeyedUnarchiver.unarchiveObjectWithFile(tokenPath()) as? EncodeClass
     }
     
     ///  返回保存在沙盒的路径
@@ -80,16 +74,5 @@ class AccessToken: NSObject,NSCoding {
         var path = NSSearchPathForDirectoriesInDomains(NSSearchPathDirectory.DocumentDirectory, NSSearchPathDomainMask.UserDomainMask, true).last as! String
         path = path.stringByAppendingPathComponent("WBToken.plist")
         return path
-    }
-}
-
-
-// MARK: - description
-///  如果要打印对象信息，OC 中的 description，在 swift 中需要遵守协议 DebugPrintable
-extension AccessToken: DebugPrintable {
-    
-    override var debugDescription: String {
-        let dict = self.dictionaryWithValuesForKeys(["access_token", "expiresDate", "uid"])
-        return "\(dict)"
     }
 }

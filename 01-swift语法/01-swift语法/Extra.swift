@@ -21,6 +21,10 @@
     5. === 判断两个对象是否指向相同的内存地址
        ==  判断两个值是否相等
 
+    6.在FrameWork项目中，不支持桥接文件（可以通过改成静态库实现）
+
+
+
     6.Swift中，如果希望让类动态调用协议方法，需要使用 @objc 的关键字
         @objc protocol DictModelProtocol {
         static func customeClassMapping() -> [String: String]?
