@@ -402,6 +402,7 @@
 				EDB6BA6B1AA08529008A0844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDB6BA6C1AA08529008A0844 /* Build configuration list for PBXNativeTarget "02-swift空白程序Tests" */ = {
 			isa = XCConfigurationList;
@@ -410,6 +411,7 @@
 				EDB6BA6E1AA08529008A0844 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
