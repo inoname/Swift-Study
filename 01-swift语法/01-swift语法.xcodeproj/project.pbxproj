@@ -13,6 +13,9 @@
 		ED4D7D3B1AA0A494001FBED3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D7D3A1AA0A494001FBED3 /* ViewController.swift */; };
 		ED4D7D401AA0A494001FBED3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4D7D3F1AA0A494001FBED3 /* Images.xcassets */; };
 		ED4D7D4F1AA0A494001FBED3 /* _1_swift__Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4D7D4E1AA0A494001FBED3 /* _1_swift__Tests.swift */; };
+		ED6470211AA96B5E00B22490 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6470201AA96B5E00B22490 /* AsyncTask.swift */; };
+		ED6470221AA96B9700B22490 /* AsyncTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6470201AA96B5E00B22490 /* AsyncTask.swift */; };
+		ED6470241AA96BDC00B22490 /* AsyncTaskTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6470231AA96BDC00B22490 /* AsyncTaskTest.swift */; };
 		ED75C2FD1AA5BDE300A13A68 /* EncodeClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75C2FC1AA5BDE300A13A68 /* EncodeClass.swift */; };
 		EDDA79FA1AA88D3400913E31 /* ExampleClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDA79F91AA88D3400913E31 /* ExampleClass.swift */; };
 		EDDA79FC1AA890B300913E31 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDA79FB1AA890B300913E31 /* Block.swift */; };
@@ -41,6 +44,8 @@
 		ED4D7D4D1AA0A494001FBED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED4D7D4E1AA0A494001FBED3 /* _1_swift__Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _1_swift__Tests.swift; sourceTree = "<group>"; };
 		ED4D7D641AA0AFA8001FBED3 /* Playgrounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Playgrounds; sourceTree = "<group>"; };
+		ED6470201AA96B5E00B22490 /* AsyncTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTask.swift; sourceTree = "<group>"; };
+		ED6470231AA96BDC00B22490 /* AsyncTaskTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTaskTest.swift; sourceTree = "<group>"; };
 		ED75C2FC1AA5BDE300A13A68 /* EncodeClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EncodeClass.swift; sourceTree = "<group>"; };
 		EDDA79F91AA88D3400913E31 /* ExampleClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleClass.swift; sourceTree = "<group>"; };
 		EDDA79FB1AA890B300913E31 /* Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
@@ -96,6 +101,7 @@
 				ED75C2FC1AA5BDE300A13A68 /* EncodeClass.swift */,
 				EDDA79F91AA88D3400913E31 /* ExampleClass.swift */,
 				EDDA79FB1AA890B300913E31 /* Block.swift */,
+				ED6470201AA96B5E00B22490 /* AsyncTask.swift */,
 			);
 			path = "01-swift语法";
 			sourceTree = "<group>";
@@ -112,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				ED4D7D4E1AA0A494001FBED3 /* _1_swift__Tests.swift */,
+				ED6470231AA96BDC00B22490 /* AsyncTaskTest.swift */,
 				ED4D7D4C1AA0A494001FBED3 /* Supporting Files */,
 			);
 			path = "01-swift语法Tests";
@@ -226,6 +233,7 @@
 				ED75C2FD1AA5BDE300A13A68 /* EncodeClass.swift in Sources */,
 				EDDA79FC1AA890B300913E31 /* Block.swift in Sources */,
 				EDDA79FA1AA88D3400913E31 /* ExampleClass.swift in Sources */,
+				ED6470211AA96B5E00B22490 /* AsyncTask.swift in Sources */,
 				ED4D7D3B1AA0A494001FBED3 /* ViewController.swift in Sources */,
 				EDDB57181AA4846B00157C91 /* SingleInstance.swift in Sources */,
 				ED3A9D481AA56115001641ED /* Extra.swift in Sources */,
@@ -237,9 +245,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED6470241AA96BDC00B22490 /* AsyncTaskTest.swift in Sources */,
 				EDDB57191AA486A300157C91 /* ViewController.swift in Sources */,
 				ED3E9EFB1AA5783800EDC571 /* SingleInstance.swift in Sources */,
 				ED4D7D4F1AA0A494001FBED3 /* _1_swift__Tests.swift in Sources */,
+				ED6470221AA96B9700B22490 /* AsyncTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
