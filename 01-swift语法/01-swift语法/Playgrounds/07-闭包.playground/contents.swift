@@ -14,7 +14,7 @@ let names = ["Chris", "Alex", "Ewa", "Barry", "Daniella"]
     定义闭包类型， 注意类型别名的首字母要大写
     typealias Completion = (str1:String)->()
 
-    在闭包内部，需要使用 self.访问属性
+    在闭包内部，访问属性、函数需要使用 self.
 
 */
 var reversed = sorted(names, { (s1: String, s2: String) -> Bool in
