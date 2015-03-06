@@ -20,6 +20,8 @@
     Swift 中，默认的小数类型是 Double，因为 OC 中的类型太灵活，用 float 能够快点一点
     整数的默认类型是 Int
 */
+
+/**/
 let i = 10
 let j = 10.5
 let k1 = Double(i) + j
