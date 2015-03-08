@@ -12,6 +12,11 @@ import UIKit
  */
 
 
+/**
+    swift 中向 NSCache/NSArray/NSDictrionary 中添加数值不需要包装
+*/
+
+
 //数组定义
 var strArray = [String]()  //只能保存字符串，同时实例化
 var numArray: [Int]        //只是定义了一个数组，但是没有实例化

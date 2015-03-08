@@ -34,6 +34,7 @@ urlString = urlString.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEnco
 /**
    可选绑定
    以下的格式能够保证 if 中的 url 是一定有内容的
+   “ = ” 后面的内容一定要是可选的
  */
 if let url1 = NSURL(string: urlString) {
     

@@ -23,6 +23,16 @@
 
     6.在FrameWork项目中，不支持桥接文件（可以通过改成静态库实现）
 
+    7.多项目协同开发时，工具类一定要有一个public的init方法
+
+    8.swift中延时执行的代码
+
+    let delay = 2.0 * Double(NSEC_PER_SEC)
+    let time = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
+    dispatch_after(time, dispatch_get_main_queue(), {println("todo something")})
+
+
+
 
 
 

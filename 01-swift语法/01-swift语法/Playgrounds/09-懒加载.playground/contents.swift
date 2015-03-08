@@ -14,7 +14,7 @@ class Person {
     lazy var title:String = "boss"
     
     // 如果要做复杂的操作，可以使用以下形式
-    lazy var tableView:UITableView?={
+    lazy var tableView:UITableView? = {
         let view = UITableView()
         // do something
         return view
