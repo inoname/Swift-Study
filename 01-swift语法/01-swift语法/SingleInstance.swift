@@ -26,7 +26,10 @@ class SingleInstance{
     */
     
     // 用let定义常量，在Swift中let是线程安全的
-    static let sharedInstance = SingleInstance()
+    private static let instance = SingleInstance()
+    class var sharedInstance: SingleInstance{
+        return instance
+    }
     
     init() {
         println("实例化")

@@ -31,7 +31,11 @@ println(optionalStr)
 println(optionalStr!)
 
 
+/// String和NSString在计算长度时的区别
 let str: String = "我要飞的更高"
+let length1 = str.lengthOfBytesUsingEncoding(NSUTF8StringEncoding)
+let length2 = (str as NSString).length
+
 
 // 遍历字符
 for c in str {
@@ -55,3 +59,22 @@ let str2 = str + str1 + "  \(i)   \(view)"
 // 特殊格式要求 %02d
 // OC中很多 WithXXX 的方法，到 Swift 中，都变成 (XXX，基本上都能找到
 let str3 = String(format: "hello - %04d", arguments: [i])
+
+
+
+
+
+
+
+/// 十六进制字符串转Unicode
+let sparklingHeart = "\u{1F496}"
+let ss = "\u{1f603}"
+
+let code = "0x1f603"
+let scanner = NSScanner(string: code)
+// 提示：如果要传递指针，不能使用 let，var 才能修改数值
+var value: UInt32 = 0
+scanner.scanHexInt(&value)
+value
+let emoji = Character(UnicodeScalar(value))
+
