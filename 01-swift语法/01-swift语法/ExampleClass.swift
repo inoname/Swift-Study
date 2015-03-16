@@ -22,7 +22,7 @@ class ExampleClass: NSObject {
     // static修饰的变量可以存储内容
     static var imageCachePath = "com.imagecache"
     
-    // class修饰的变量不可以村粗内容，但是可以返回数值
+    // class修饰的变量不可以存储内容，但是可以返回数值
     class var path:String  {
         return "path"
     }
