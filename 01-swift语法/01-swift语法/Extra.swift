@@ -59,5 +59,11 @@
         //自定义对象归档实现 NSCoding 协议
         required init(coder decoder: NSCoder) {}
 
+    4.convenience 不是主构造函数，简化的构造函数，必须调用默认的构造函数
+        convenience init(pkId: Int) {
+            //...
+            self.init()
+        }
+
 
 */
